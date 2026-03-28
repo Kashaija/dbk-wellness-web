@@ -1,24 +1,29 @@
-# Centered Life Counseling
+# Kashaija Therapy Site
 
-A modern single-page website for Danielle Kashaija, LCSW. It highlights telehealth services, specialties, and impact stats, features a floating logo, a five-slide testimonial hero carousel, and anchored navigation tuned for a floating header.
+A modern single-page website for Danielle Kashaija, LCSW. It highlights telehealth services, specialties, impact stats (with live links), and features a hero testimonial carousel plus a floating header with full-width banner.
+
+## Versions
+- **Root**: Desktop-first layout with responsive tweaks.
+- **mobile-friendly/**: Copy of the site with additional mobile optimizations (stacked header/nav, single-column hero on small screens, reduced paddings, shorter banner).
 
 ## Preview locally
 1. Open `index.html` directly in your browser, or
-2. From this directory on macOS: `open -a "Safari" index.html`
+2. macOS: `open -a "Safari" index.html`
+3. For the mobile-friendly version: `open -a "Safari" mobile-friendly/index.html`
 
 ## Structure
-- `index.html` – Content and layout
-- `styles.css` – Theme, layout, hero slider, responsive tweaks
-- `assets/` – Logo (`DBK_Logo.png`, `logo-square.png`), about photo (`dbk_about.png`)
+- `index.html`, `styles.css` — main site
+- `mobile-friendly/` — mobile-optimized clone (uses same assets)
+- `assets/` — logo(s), about photo, toolkits, PDFs
+  - `grounding-toolkit.md`
+  - `sleep-hygiene-toolkit.md`
+  - `sleep-hygiene-kids.pdf`, `sleep-hygiene-teens.pdf`, `sleep-hygiene-adults.pdf`
 
-## Notes
-- In-page links use `scroll-margin-top: 300px` to avoid the floating logo overlap.
-- Hero slider auto-rotates every 7.5s; images are people-first and labeled with names.
-
-## To adjust
-- Logo position/size: edit `.floating-logo` in `styles.css`
-- Hero height or interval: edit `.slider` height and the interval in the inline script near the end of `index.html`
-- Brand font: `Great Vibes` loaded via Google Fonts in the document head
+## Impact stats (live linked)
+- Youth persistent sadness/hopelessness (CDC YRBS 2023) and adolescent MH prevalence (NSCH 2023)
+- Adult depression prevalence (CDC 2024)
+- PTSD annual prevalence (NIMH)
+- Youth ADHD prevalence (CDC ADHD data)
 
 ## Deployment
-Any static host works (GitHub Pages, Netlify, Vercel). No build step required.
+Any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). No build step required.
