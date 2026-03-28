@@ -1,4 +1,4 @@
-# Kashaija Therapy Site
+# Centered Life Counseling
 
 A modern single-page website for Danielle Kashaija, LCSW. It highlights telehealth services, specialties, and impact stats, features a floating logo, a five-slide testimonial hero carousel, and anchored navigation tuned for a floating header.
 
